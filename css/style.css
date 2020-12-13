@@ -1,0 +1,132 @@
+body{
+font-family: 'Roboto', sans-serif;
+}
+.container{
+width: 100%;
+max-width: 1366px;
+margin: 0 auto;
+height: 768px;
+background: url(../img/BG_Milano.png) no-repeat center;
+}
+.menu{
+display: flex;
+padding-top: 46px;
+padding-left: 161px;
+padding-right: 177px;
+padding-bottom: 22px;
+}
+.menu_text_one{
+font-weight: bold;
+font-size: 29px;
+line-height: 29px;
+text-transform: uppercase;
+color: white;
+padding-bottom: 3px;
+}
+.menu_text_second{
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+text-transform: uppercase;
+color: white;
+}
+.text{
+display: flex;
+flex-direction:column;
+padding-left: 10px;
+color:white;
+}
+
+.menu_contacts{
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+flex-direction: column;
+padding-left: 655px;
+font-size: 18px;
+line-height: 18px;
+font-weight: 100;
+color: #FFFFFF;
+}
+.menu_mail:hover, .menu_phone:hover {
+color: #F26522;
+}
+.cards{
+display: grid;
+grid-template-columns: repeat(3,300px);
+grid-gap: 22px 61px;
+width: 1028px;
+padding-left: 161px;
+padding-right: 178px;
+}
+.photo_card_title{
+padding-top: 20px;
+padding-bottom: 37px;
+font-size: 18px;
+line-height: 18px;
+font-weight: 100;
+text-align: center;
+color: #FFFFFF;
+}
+.photo{
+position: relative;
+width: 300px;
+height: 220px;
+border: 2px solid transparent;
+border-image: linear-gradient(#fefefe, black);
+border-image-slice: 1;
+box-shadow: 0 15px 20px black;
+}
+.photo_hover{
+position: absolute;
+width: 300px;
+height: 55px;
+top: 295px;
+background: #F26522;
+opacity: 0;
+}
+.photo_card:hover .photo_hover{
+opacity: 1;
+transition: opacity 0.5s ease-in-out;
+}
+.photo_card:hover .photo_card_title{
+color:#F26522;
+}
+.container-price-view-details{
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+}
+.item_from {
+padding-bottom: 7px;
+padding-left: 16px;
+font-weight: normal;
+font-size: 10px;
+line-height: 20px;
+color: #FFFFFF;
+}
+.item_price {
+padding-left: 16px;
+font-weight: normal;
+font-size: 20px;
+line-height: 20px;
+color: #FFFFFF;
+}
+.item_view-details {
+font-weight: normal;
+font-size: 14px;
+color: #FFFFFF;
+}  
+.item_view-details::after{
+content: url(../img/arrow.png);
+padding-left: 14px;
+padding-right: 14px;
+}
+.footer_text{
+display: flex;
+justify-content: center;
+font-size: 12px;
+line-height: 12px;
+color: #FFFFFF;
+font-weight: 100;
+}
