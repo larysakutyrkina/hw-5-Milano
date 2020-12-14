@@ -1,63 +1,74 @@
 body{
 font-family: 'Roboto', sans-serif;
 }
+.wrapper{
+background: url(../img/BG_Milano.png) no-repeat center / cover fixed;
+}
 .container{
-width: 100%;
 max-width: 1366px;
 margin: 0 auto;
 height: 768px;
-background: url(../img/BG_Milano.png) no-repeat center;
 }
-.menu{
+.header{
+color: white;
+padding-top: 51px;
 display: flex;
-padding-top: 46px;
-padding-left: 161px;
-padding-right: 177px;
-padding-bottom: 22px;
+justify-content: space-between;
 }
-.menu_text_one{
-font-weight: bold;
-font-size: 29px;
-line-height: 29px;
+.header_logo{
+display: flex;
+text-align: center;
 text-transform: uppercase;
-color: white;
-padding-bottom: 3px;
-}
-.menu_text_second{
-font-weight: bold;
-font-size: 18px;
-line-height: 18px;
-text-transform: uppercase;
-color: white;
 }
 .text{
 display: flex;
-flex-direction:column;
-padding-left: 10px;
-color:white;
-}
-
-.menu_contacts{
-display: flex;
-justify-content: space-between;
-align-items: flex-end;
 flex-direction: column;
-padding-left: 655px;
+padding-left: 8px;
+font-weight: bold;
+}
+.text_one{
+font-size: 29px;
+line-height: 29px;
+}
+.text_two{
 font-size: 18px;
 line-height: 18px;
-font-weight: 100;
-color: #FFFFFF;
 }
-.menu_mail:hover, .menu_phone:hover {
+.logo{
+width: 53px;
+height: 60px;
+fill: white;
+margin-left: 161px;
+}
+.header_logo:hover .text{
+fill:#F26522;
 color: #F26522;
+transition: 0.5s;
+}
+.header_logo:hover .logo{
+fill:#F26522;
+color: #F26522;
+transition: 0.5s;
+}
+.menu_contacts{
+display: flex;
+flex-direction: column;
+margin-right: 171px;
+text-align: right;
+}
+.menu_mail, .menu_phone{
+padding-bottom: 19px;
+}
+.menu_mail:hover, .menu_phone:hover{
+color: #F26522;
+transition: 0.5s;
 }
 .cards{
 display: grid;
 grid-template-columns: repeat(3,300px);
 grid-gap: 22px 61px;
 width: 1028px;
-padding-left: 161px;
-padding-right: 178px;
+padding-left: 171px;
 }
 .photo_card_title{
 padding-top: 20px;
@@ -68,8 +79,12 @@ font-weight: 100;
 text-align: center;
 color: #FFFFFF;
 }
-.photo{
+.photo_card{
 position: relative;
+width: 300px;
+height: 220px;
+}
+.photo{
 width: 300px;
 height: 220px;
 border: 2px solid transparent;
@@ -81,7 +96,9 @@ box-shadow: 0 15px 20px black;
 position: absolute;
 width: 300px;
 height: 55px;
-top: 295px;
+left: 0;
+right: 0;
+bottom: 15%;
 background: #F26522;
 opacity: 0;
 }
